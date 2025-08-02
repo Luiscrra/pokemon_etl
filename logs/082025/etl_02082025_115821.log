@@ -1,0 +1,74 @@
+2025-08-02 11:58:21,638 - INFO - [ETL] - Inicia proceso 2025-08-02 11:58:21
+2025-08-02 11:58:21,638 - INFO - [ETL] - Directorio de logs: logs
+2025-08-02 11:58:21,640 - INFO - [ETL] - Directorio de especies crudas: data\raw\species
+2025-08-02 11:58:21,641 - INFO - [ETL] - Directorio de Pokemon crudos: data\raw\pokemon
+2025-08-02 11:58:21,642 - INFO - [ETL] - Directorio archivo config: config_file\config.json
+2025-08-02 11:58:21,643 - INFO - [ETL] - URL base de la API: https://pokeapi.co/api/v2/
+2025-08-02 11:58:21,644 - INFO - [ETL] - Generaciones a procesar: ['generation-i', 'generation-ii', 'generation-iii', 'generation-iv', 'generation-v', 'generation-vi', 'generation-vii', 'generation-viii']
+2025-08-02 11:58:21,645 - INFO - [ETL] - Parámetros de conexión a la base de datos: user=myuser, host=localhost, dbname=pokemon_db, port=5432
+2025-08-02 11:58:21,645 - INFO - [ETL] - Inicia el proceso de extraccion de datos crudos.
+2025-08-02 11:58:21,655 - INFO - [EXTRACT] - Obteniendo lista de generaciones...
+2025-08-02 11:58:21,778 - INFO - [EXTRACT] - Descargando generation-i desde: https://pokeapi.co/api/v2/generation/1/
+2025-08-02 11:58:30,731 - INFO - [EXTRACT] - Generación generation-i guardada en data\raw\species
+2025-08-02 11:58:30,732 - INFO - [EXTRACT] - Descargando generation-ii desde: https://pokeapi.co/api/v2/generation/2/
+2025-08-02 11:58:37,381 - INFO - [EXTRACT] - Generación generation-ii guardada en data\raw\species
+2025-08-02 11:58:37,382 - INFO - [EXTRACT] - Descargando generation-iii desde: https://pokeapi.co/api/v2/generation/3/
+2025-08-02 11:58:52,775 - INFO - [EXTRACT] - Generación generation-iii guardada en data\raw\species
+2025-08-02 11:58:52,775 - INFO - [EXTRACT] - Descargando generation-iv desde: https://pokeapi.co/api/v2/generation/4/
+2025-08-02 11:59:03,282 - INFO - [EXTRACT] - Generación generation-iv guardada en data\raw\species
+2025-08-02 11:59:03,284 - INFO - [EXTRACT] - Descargando generation-v desde: https://pokeapi.co/api/v2/generation/5/
+2025-08-02 11:59:19,823 - INFO - [EXTRACT] - Generación generation-v guardada en data\raw\species
+2025-08-02 11:59:19,824 - INFO - [EXTRACT] - Descargando generation-vi desde: https://pokeapi.co/api/v2/generation/6/
+2025-08-02 11:59:25,776 - INFO - [EXTRACT] - Generación generation-vi guardada en data\raw\species
+2025-08-02 11:59:25,777 - INFO - [EXTRACT] - Descargando generation-vii desde: https://pokeapi.co/api/v2/generation/7/
+2025-08-02 11:59:34,061 - INFO - [EXTRACT] - Generación generation-vii guardada en data\raw\species
+2025-08-02 11:59:34,061 - INFO - [EXTRACT] - Descargando generation-viii desde: https://pokeapi.co/api/v2/generation/8/
+2025-08-02 11:59:46,211 - INFO - [EXTRACT] - Generación generation-viii guardada en data\raw\species
+2025-08-02 11:59:46,229 - INFO - [EXTRACT] - Obteniendo lista de Pokémon...
+2025-08-02 11:59:51,278 - INFO - [EXTRACT] - Lote 1 guardado (50 Pokémon).
+2025-08-02 11:59:55,507 - INFO - [EXTRACT] - Lote 2 guardado (50 Pokémon).
+2025-08-02 12:00:00,191 - INFO - [EXTRACT] - Lote 3 guardado (50 Pokémon).
+2025-08-02 12:00:05,274 - INFO - [EXTRACT] - Lote 4 guardado (50 Pokémon).
+2025-08-02 12:00:09,702 - INFO - [EXTRACT] - Lote 5 guardado (50 Pokémon).
+2025-08-02 12:00:13,617 - INFO - [EXTRACT] - Lote 6 guardado (50 Pokémon).
+2025-08-02 12:00:18,688 - INFO - [EXTRACT] - Lote 7 guardado (50 Pokémon).
+2025-08-02 12:00:22,768 - INFO - [EXTRACT] - Lote 8 guardado (50 Pokémon).
+2025-08-02 12:00:25,828 - INFO - [EXTRACT] - Lote 9 guardado (50 Pokémon).
+2025-08-02 12:00:29,499 - INFO - [EXTRACT] - Lote 10 guardado (50 Pokémon).
+2025-08-02 12:00:32,307 - INFO - [EXTRACT] - Lote 11 guardado (50 Pokémon).
+2025-08-02 12:00:34,781 - INFO - [EXTRACT] - Lote 12 guardado (50 Pokémon).
+2025-08-02 12:00:37,075 - INFO - [EXTRACT] - Lote 13 guardado (50 Pokémon).
+2025-08-02 12:00:39,317 - INFO - [EXTRACT] - Lote 14 guardado (50 Pokémon).
+2025-08-02 12:00:40,855 - INFO - [EXTRACT] - Lote 15 guardado (50 Pokémon).
+2025-08-02 12:00:42,375 - INFO - [EXTRACT] - Lote 16 guardado (50 Pokémon).
+2025-08-02 12:00:43,528 - INFO - [EXTRACT] - Lote 17 guardado (50 Pokémon).
+2025-08-02 12:00:44,440 - INFO - [EXTRACT] - Lote 18 guardado (50 Pokémon).
+2025-08-02 12:00:45,331 - INFO - [EXTRACT] - Lote 19 guardado (50 Pokémon).
+2025-08-02 12:00:46,157 - INFO - [EXTRACT] - Lote 20 guardado (50 Pokémon).
+2025-08-02 12:00:48,560 - INFO - [EXTRACT] - Lote 21 guardado (50 Pokémon).
+2025-08-02 12:00:50,517 - INFO - [EXTRACT] - Lote 22 guardado (50 Pokémon).
+2025-08-02 12:00:51,968 - INFO - [EXTRACT] - Lote 23 guardado (50 Pokémon).
+2025-08-02 12:00:53,551 - INFO - [EXTRACT] - Lote 24 guardado (50 Pokémon).
+2025-08-02 12:00:56,036 - INFO - [EXTRACT] - Lote 25 guardado (50 Pokémon).
+2025-08-02 12:00:57,408 - INFO - [EXTRACT] - Lote 26 guardado (50 Pokémon).
+2025-08-02 12:00:57,468 - INFO - [EXTRACT] - Lote 27 guardado (2 Pokémon).
+2025-08-02 12:00:57,552 - INFO - [ETL] - Finaliza proceso de extraccion 2025-08-02 11:58:21
+2025-08-02 12:00:57,552 - INFO - [ETL] - Inicia el proceso de transformación de datos crudos.
+2025-08-02 12:00:57,902 - INFO - [TRANSFORM] - Se han cargado 151 especies de la generación generation-i.
+2025-08-02 12:00:58,022 - INFO - [TRANSFORM] - Se han cargado 100 especies de la generación generation-ii.
+2025-08-02 12:00:58,327 - INFO - [TRANSFORM] - Se han cargado 135 especies de la generación generation-iii.
+2025-08-02 12:00:58,439 - INFO - [TRANSFORM] - Se han cargado 107 especies de la generación generation-iv.
+2025-08-02 12:00:58,584 - INFO - [TRANSFORM] - Se han cargado 156 especies de la generación generation-v.
+2025-08-02 12:00:58,820 - INFO - [TRANSFORM] - Se han cargado 72 especies de la generación generation-vi.
+2025-08-02 12:00:58,969 - INFO - [TRANSFORM] - Se han cargado 88 especies de la generación generation-vii.
+2025-08-02 12:00:59,053 - INFO - [TRANSFORM] - Se han cargado 96 especies de la generación generation-viii.
+2025-08-02 12:01:09,673 - INFO - [TRANSFORM] - Se han cargado 1302 Pokémon desde los archivos crudos.
+2025-08-02 12:01:11,015 - INFO - [TRANSFORM] - Se ha guardado el DataFrame en formato parquet y CSV con 905 registros en data\processed
+2025-08-02 12:01:11,259 - INFO - [ETL] - Finaliza proceso de transformación 2025-08-02 11:58:21
+2025-08-02 12:01:11,260 - INFO - [ETL] - Inicia el proceso de carga de datos a la base de datos.
+2025-08-02 12:01:12,832 - INFO - [LOAD] - Datos de Pokémon leídos exitosamente desde Parquet.
+2025-08-02 12:01:12,833 - INFO - [LOAD] - Intentando conectar a la base de datos PostgreSQL...
+2025-08-02 12:01:13,226 - INFO - [LOAD] - Conexión exitosa a la base de datos PostgreSQL.
+2025-08-02 12:01:14,348 - INFO - [LOAD] - Datos de Pokémon cargados exitosamente en la base de datos.
+2025-08-02 12:01:14,349 - INFO - [ETL] - Finaliza proceso de carga 2025-08-02 11:58:21
+2025-08-02 12:01:14,350 - INFO - [ETL] - Tiempo total de ejecución: 0:02:52.719964

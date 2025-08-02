@@ -1,0 +1,28 @@
+[2025-07-31T22:54:41.900+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-31T22:54:41.977+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pokemon_etl_dag.transform_data scheduled__2025-07-30T00:00:00+00:00 [queued]>
+[2025-07-31T22:54:42.000+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pokemon_etl_dag.transform_data scheduled__2025-07-30T00:00:00+00:00 [queued]>
+[2025-07-31T22:54:42.003+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-07-31T22:54:42.037+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_data> on 2025-07-30 00:00:00+00:00
+[2025-07-31T22:54:42.058+0000] {standard_task_runner.py:63} INFO - Started process 287 to run task
+[2025-07-31T22:54:42.069+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pokemon_etl_dag', 'transform_data', 'scheduled__2025-07-30T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/pokemon_dags.py', '--cfg-path', '/tmp/tmp8qdnnu3b']
+[2025-07-31T22:54:42.077+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask transform_data
+[2025-07-31T22:54:42.168+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-31T22:54:42.375+0000] {task_command.py:426} INFO - Running <TaskInstance: pokemon_etl_dag.transform_data scheduled__2025-07-30T00:00:00+00:00 [running]> on host 79dd1729ef10
+[2025-07-31T22:54:42.713+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Luis' AIRFLOW_CTX_DAG_ID='pokemon_etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-30T00:00:00+00:00'
+[2025-07-31T22:54:42.717+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-31T22:54:43.679+0000] {transform.py:22} INFO - Se han cargado 151 especies de la generación generation-i.
+[2025-07-31T22:54:43.807+0000] {transform.py:22} INFO - Se han cargado 100 especies de la generación generation-ii.
+[2025-07-31T22:54:43.964+0000] {transform.py:22} INFO - Se han cargado 135 especies de la generación generation-iii.
+[2025-07-31T22:54:44.071+0000] {transform.py:22} INFO - Se han cargado 107 especies de la generación generation-iv.
+[2025-07-31T22:54:44.216+0000] {transform.py:22} INFO - Se han cargado 156 especies de la generación generation-v.
+[2025-07-31T22:54:44.270+0000] {transform.py:22} INFO - Se han cargado 72 especies de la generación generation-vi.
+[2025-07-31T22:54:44.341+0000] {transform.py:22} INFO - Se han cargado 88 especies de la generación generation-vii.
+[2025-07-31T22:54:44.888+0000] {transform.py:22} INFO - Se han cargado 96 especies de la generación generation-viii.
+[2025-07-31T22:54:54.484+0000] {transform.py:87} INFO - Se han cargado 1302 Pokémon desde los archivos crudos.
+[2025-07-31T22:54:55.543+0000] {transform.py:150} INFO - Se ha guardado el DataFrame en formato parquet y CSV con 905 registros en data/processed
+[2025-07-31T22:54:55.761+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-31T22:54:55.765+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-31T22:54:55.795+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=pokemon_etl_dag, task_id=transform_data, execution_date=20250730T000000, start_date=20250731T225441, end_date=20250731T225455
+[2025-07-31T22:54:55.950+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-31T22:54:56.017+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-31T22:54:56.024+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

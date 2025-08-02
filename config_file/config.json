@@ -1,0 +1,33 @@
+{
+    "api_config":{
+        "api_base_url":"https://pokeapi.co/api/v2/",
+        "generations":[
+            "generation-i",
+            "generation-ii",
+            "generation-iii",
+            "generation-iv",
+            "generation-v",
+            "generation-vi",
+            "generation-vii",
+            "generation-viii"
+        ]
+    },
+    "path_config":{
+        "raw_species_path":"data/raw/species",
+        "raw_pokemon_path":"data/raw/pokemon",
+        "processed_path":"data/processed",
+        "logs_path":"logs",
+        "base_dir":"pokemon_etl"
+    },
+    "file_config":{
+        "parquet_name":"pokemones.parquet",
+        "csv_name":"pokemones.csv"
+    },
+    "db_config":{
+        "db_name":"pokemon_db",
+        "user":"myuser",
+        "password":"mypassword",
+        "host":"pokemon-db",
+        "port":5432
+    }
+}

@@ -1,0 +1,28 @@
+[2025-08-02T10:39:42.270+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-02T10:39:42.387+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pokemon_etl_dag.transform_data manual__2025-08-02T10:37:30.084630+00:00 [queued]>
+[2025-08-02T10:39:42.424+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pokemon_etl_dag.transform_data manual__2025-08-02T10:37:30.084630+00:00 [queued]>
+[2025-08-02T10:39:42.428+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-08-02T10:39:42.468+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_data> on 2025-08-02 10:37:30.084630+00:00
+[2025-08-02T10:39:42.498+0000] {standard_task_runner.py:63} INFO - Started process 2656 to run task
+[2025-08-02T10:39:42.507+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pokemon_etl_dag', 'transform_data', 'manual__2025-08-02T10:37:30.084630+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/pokemon_dags.py', '--cfg-path', '/tmp/tmpbxh1x4up']
+[2025-08-02T10:39:42.516+0000] {standard_task_runner.py:91} INFO - Job 42: Subtask transform_data
+[2025-08-02T10:39:42.587+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-08-02T10:39:42.784+0000] {task_command.py:426} INFO - Running <TaskInstance: pokemon_etl_dag.transform_data manual__2025-08-02T10:37:30.084630+00:00 [running]> on host 67c618456cf9
+[2025-08-02T10:39:43.071+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Luis' AIRFLOW_CTX_DAG_ID='pokemon_etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-08-02T10:37:30.084630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-02T10:37:30.084630+00:00'
+[2025-08-02T10:39:43.075+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-02T10:39:43.952+0000] {transform.py:22} INFO - Se han cargado 151 especies de la generación generation-i.
+[2025-08-02T10:39:44.124+0000] {transform.py:22} INFO - Se han cargado 100 especies de la generación generation-ii.
+[2025-08-02T10:39:44.284+0000] {transform.py:22} INFO - Se han cargado 135 especies de la generación generation-iii.
+[2025-08-02T10:39:44.382+0000] {transform.py:22} INFO - Se han cargado 107 especies de la generación generation-iv.
+[2025-08-02T10:39:44.523+0000] {transform.py:22} INFO - Se han cargado 156 especies de la generación generation-v.
+[2025-08-02T10:39:44.580+0000] {transform.py:22} INFO - Se han cargado 72 especies de la generación generation-vi.
+[2025-08-02T10:39:44.665+0000] {transform.py:22} INFO - Se han cargado 88 especies de la generación generation-vii.
+[2025-08-02T10:39:45.126+0000] {transform.py:22} INFO - Se han cargado 96 especies de la generación generation-viii.
+[2025-08-02T10:39:58.467+0000] {transform.py:87} INFO - Se han cargado 1302 Pokémon desde los archivos crudos.
+[2025-08-02T10:39:59.827+0000] {transform.py:150} INFO - Se ha guardado el DataFrame en formato parquet y CSV con 905 registros en /opt/***/data/processed
+[2025-08-02T10:40:00.073+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-08-02T10:40:00.077+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-02T10:40:00.114+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=pokemon_etl_dag, task_id=transform_data, execution_date=20250802T103730, start_date=20250802T103942, end_date=20250802T104000
+[2025-08-02T10:40:00.299+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-02T10:40:00.365+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-02T10:40:00.566+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

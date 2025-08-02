@@ -1,0 +1,63 @@
+[2025-07-30T17:09:24.256+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-30T17:09:24.319+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pokemon_etl_dag.extract_data scheduled__2025-07-29T00:00:00+00:00 [queued]>
+[2025-07-30T17:09:24.334+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pokemon_etl_dag.extract_data scheduled__2025-07-29T00:00:00+00:00 [queued]>
+[2025-07-30T17:09:24.336+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-07-30T17:09:24.358+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): extract_data> on 2025-07-29 00:00:00+00:00
+[2025-07-30T17:09:24.379+0000] {standard_task_runner.py:63} INFO - Started process 172 to run task
+[2025-07-30T17:09:24.385+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pokemon_etl_dag', 'extract_data', 'scheduled__2025-07-29T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/pokemon_dags.py', '--cfg-path', '/tmp/tmppngcbgmo']
+[2025-07-30T17:09:24.391+0000] {standard_task_runner.py:91} INFO - Job 11: Subtask extract_data
+[2025-07-30T17:09:24.433+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-30T17:09:24.614+0000] {task_command.py:426} INFO - Running <TaskInstance: pokemon_etl_dag.extract_data scheduled__2025-07-29T00:00:00+00:00 [running]> on host 86109165cffe
+[2025-07-30T17:09:24.841+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Luis' AIRFLOW_CTX_DAG_ID='pokemon_etl_dag' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-29T00:00:00+00:00'
+[2025-07-30T17:09:24.847+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-30T17:09:24.893+0000] {extract.py:92} INFO - Obteniendo lista de generaciones...
+[2025-07-30T17:09:25.095+0000] {extract.py:95} INFO - Descargando generation-i desde: https://pokeapi.co/api/v2/generation/1/
+[2025-07-30T17:09:30.232+0000] {extract.py:105} INFO - Generación generation-i guardada en data/raw/species
+[2025-07-30T17:09:30.235+0000] {extract.py:95} INFO - Descargando generation-ii desde: https://pokeapi.co/api/v2/generation/2/
+[2025-07-30T17:09:34.272+0000] {extract.py:105} INFO - Generación generation-ii guardada en data/raw/species
+[2025-07-30T17:09:34.273+0000] {extract.py:95} INFO - Descargando generation-iii desde: https://pokeapi.co/api/v2/generation/3/
+[2025-07-30T17:09:38.127+0000] {extract.py:105} INFO - Generación generation-iii guardada en data/raw/species
+[2025-07-30T17:09:38.128+0000] {extract.py:95} INFO - Descargando generation-iv desde: https://pokeapi.co/api/v2/generation/4/
+[2025-07-30T17:09:43.045+0000] {extract.py:105} INFO - Generación generation-iv guardada en data/raw/species
+[2025-07-30T17:09:43.046+0000] {extract.py:95} INFO - Descargando generation-v desde: https://pokeapi.co/api/v2/generation/5/
+[2025-07-30T17:09:50.388+0000] {extract.py:105} INFO - Generación generation-v guardada en data/raw/species
+[2025-07-30T17:09:50.390+0000] {extract.py:95} INFO - Descargando generation-vi desde: https://pokeapi.co/api/v2/generation/6/
+[2025-07-30T17:09:54.129+0000] {extract.py:105} INFO - Generación generation-vi guardada en data/raw/species
+[2025-07-30T17:09:54.130+0000] {extract.py:95} INFO - Descargando generation-vii desde: https://pokeapi.co/api/v2/generation/7/
+[2025-07-30T17:09:57.286+0000] {extract.py:105} INFO - Generación generation-vii guardada en data/raw/species
+[2025-07-30T17:09:57.287+0000] {extract.py:95} INFO - Descargando generation-viii desde: https://pokeapi.co/api/v2/generation/8/
+[2025-07-30T17:10:02.009+0000] {extract.py:105} INFO - Generación generation-viii guardada en data/raw/species
+[2025-07-30T17:10:02.016+0000] {extract.py:66} INFO - Obteniendo lista de Pokémon...
+[2025-07-30T17:10:04.541+0000] {extract.py:80} INFO - Lote 1 guardado (50 Pokémon).
+[2025-07-30T17:10:07.966+0000] {extract.py:80} INFO - Lote 2 guardado (50 Pokémon).
+[2025-07-30T17:10:10.625+0000] {extract.py:80} INFO - Lote 3 guardado (50 Pokémon).
+[2025-07-30T17:10:12.773+0000] {extract.py:80} INFO - Lote 4 guardado (50 Pokémon).
+[2025-07-30T17:10:15.610+0000] {extract.py:80} INFO - Lote 5 guardado (50 Pokémon).
+[2025-07-30T17:10:17.694+0000] {extract.py:80} INFO - Lote 6 guardado (50 Pokémon).
+[2025-07-30T17:10:20.703+0000] {extract.py:80} INFO - Lote 7 guardado (50 Pokémon).
+[2025-07-30T17:10:23.566+0000] {extract.py:80} INFO - Lote 8 guardado (50 Pokémon).
+[2025-07-30T17:10:24.943+0000] {extract.py:80} INFO - Lote 9 guardado (50 Pokémon).
+[2025-07-30T17:10:26.925+0000] {extract.py:80} INFO - Lote 10 guardado (50 Pokémon).
+[2025-07-30T17:10:28.641+0000] {extract.py:80} INFO - Lote 11 guardado (50 Pokémon).
+[2025-07-30T17:10:30.268+0000] {extract.py:80} INFO - Lote 12 guardado (50 Pokémon).
+[2025-07-30T17:10:31.503+0000] {extract.py:80} INFO - Lote 13 guardado (50 Pokémon).
+[2025-07-30T17:10:33.060+0000] {extract.py:80} INFO - Lote 14 guardado (50 Pokémon).
+[2025-07-30T17:10:34.173+0000] {extract.py:80} INFO - Lote 15 guardado (50 Pokémon).
+[2025-07-30T17:10:34.978+0000] {extract.py:80} INFO - Lote 16 guardado (50 Pokémon).
+[2025-07-30T17:10:35.590+0000] {extract.py:80} INFO - Lote 17 guardado (50 Pokémon).
+[2025-07-30T17:10:36.233+0000] {extract.py:80} INFO - Lote 18 guardado (50 Pokémon).
+[2025-07-30T17:10:36.892+0000] {extract.py:80} INFO - Lote 19 guardado (50 Pokémon).
+[2025-07-30T17:10:37.851+0000] {extract.py:80} INFO - Lote 20 guardado (50 Pokémon).
+[2025-07-30T17:10:39.700+0000] {extract.py:80} INFO - Lote 21 guardado (50 Pokémon).
+[2025-07-30T17:10:40.902+0000] {extract.py:80} INFO - Lote 22 guardado (50 Pokémon).
+[2025-07-30T17:10:41.776+0000] {extract.py:80} INFO - Lote 23 guardado (50 Pokémon).
+[2025-07-30T17:10:43.082+0000] {extract.py:80} INFO - Lote 24 guardado (50 Pokémon).
+[2025-07-30T17:10:43.870+0000] {extract.py:80} INFO - Lote 25 guardado (50 Pokémon).
+[2025-07-30T17:10:44.754+0000] {extract.py:80} INFO - Lote 26 guardado (50 Pokémon).
+[2025-07-30T17:10:44.803+0000] {extract.py:80} INFO - Lote 27 guardado (2 Pokémon).
+[2025-07-30T17:10:44.858+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-30T17:10:44.859+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-30T17:10:44.886+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=pokemon_etl_dag, task_id=extract_data, execution_date=20250729T000000, start_date=20250730T170924, end_date=20250730T171044
+[2025-07-30T17:10:44.983+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-30T17:10:45.038+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-30T17:10:45.043+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
