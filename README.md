@@ -65,7 +65,7 @@ En **Airflow**:
 ## **Instalación y ejecución**
 Clona el repositorio:
 ```bash
-git clone https://github.com/tuusuario/pokemon_etl.git
+git clone https://github.com/Luiscrra/pokemon_etl.git
 cd pokemon_etl
 ```
 
