@@ -1,0 +1,20 @@
+# Carpetas de Python
+__pycache__/
+*.pyc
+
+# Carpetas de datos
+data/raw/
+data/processed/
+
+# Logs
+logs/
+
+# Puebas
+notebooks/
+tests/
+
+# Airflow
+dags/__pycache__/
+
+# Notas personales
+LEARNING_NOTES.md
